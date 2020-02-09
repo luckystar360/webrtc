@@ -7,7 +7,7 @@ const peerConnection = new RTCPeerConnection(configuration);
 var socket = io('https://server-webrtc-nhatdn1.herokuapp.com');
 var remoteDes;
 function openStream() {
-    const config = { audio: false, video: true };
+    const config = { audio: true, video: true };
     return navigator.mediaDevices.getUserMedia(config);
 }
 
