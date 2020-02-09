@@ -4,7 +4,7 @@
  }; 
 var localStream;
 const peerConnection = new RTCPeerConnection(configuration);
-var socket = io('http://localhost:3000');
+var socket = io('https://server-webrtc-nhatdn1.herokuapp.com');
 var remoteDes;
 function openStream() {
     const config = { audio: false, video: true };
