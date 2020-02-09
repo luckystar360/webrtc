@@ -3,7 +3,7 @@
     "iceServers": [{ "url": "stun:stun.1.google.com:19302" }] 
  }; 
 var localStream;
-const peerConnection = new RTCPeerConnection(configuration);
+const peerConnection = new RTCPeerConnection();
 var socket = io('https://server-webrtc-nhatdn1.herokuapp.com');
 var remoteDes;
 function openStream() {
