@@ -12,7 +12,7 @@
     <script>
        
         $(document).ready(function(){
-            document.querySelector('#localvideo').addEventListener('click', e => init(e));
+            document.querySelector('#showVideo').addEventListener('click', e => init(e));
            
         });
 
@@ -23,11 +23,12 @@
 <body>
     <div id="wrapper">
         <div id="region-local-video">
+            <button id="showVideo">Open camera</button>
             Local Video: </br>
             <video id="localvideo" style="height: 400px; width: 400px;" autoplay playsinline controls="false"></video>
         </div>
         <div id="region-remote-video">
-            Remote Video: </br>
+            Remote Video: </br>showVideo
             <video id="remotevideo" style="height: 400px; width: 400px;" autoplay playsinline controls="false"></video>
         </div>
     </div>
