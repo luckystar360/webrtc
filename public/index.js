@@ -1,3 +1,5 @@
+'use strict';
+
 const constraints = window.constraints = {
     audio: false,
     video: true
