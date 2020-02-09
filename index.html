@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB RTC</title>
+    <script src = "./js/socket.io.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/streamVideo.js"></script>   
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="region-local-video">
+            <button id="btn-showVideo">Open camera</button>
+            <button id="btn-call">Call video</button></br>
+            Local Video: </br>
+            <video id="localvideo" style="height: 400px; width: 400px;" autoplay playsinline controls="false"></video>
+        </div>
+        <div id="region-remote-video">
+            Remote Video: </br>
+            <video id="remotevideo" style="height: 400px; width: 400px;" autoplay playsinline controls="false"></video>
+        </div>
+    </div>
+</body>
+</html>
